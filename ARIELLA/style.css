@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* navigation */
+header{
+    background: #1e6b52; /* Changed to green for better contrast */
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li a {
+      color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+
+nav li a:hover {
+    background-color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+/* header styles */
+section {
+    background: linear-gradient(135deg, #1e6b52, #2a8c66);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* section styles */
+section {
+    background: white;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+section h1 {
+    color: #1e6b52;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid #2a8c66;
+    padding-bottom: 0.8rem;
+}
+
+section h2 {
+    color: #1e6b52;
+    font-size: 1.7rem;
+    margin: 2rem 0 1.2rem 0;
+}
+
+section h3 {
+    color: #164c3a;
+    font-size: 1.4rem;
+    margin: 1.8rem 0 1rem 0;
+}
+
+section h4 {
+    color: #1e6b52;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+/* paragraph and text styles */
+p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+strong {
+    color: #1e6b52;
+}
+
+/* list styles  */
+ul {
+    margin: 1.2rem 0 1.2rem 2rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    padding-left: 0.5rem;
+}
+
+/* my article styles */
+article {
+    background: #f0f7f4;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    border-left: 5px solid #2a8c66;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* form */
+form {
+    background: #f0f7f4;
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border: 2px solid #e0eee8;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    color: #1e6b52;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #2a8c66;
+    box-shadow: 0 0 8px rgba(42, 140, 102, 0.3);
+    transform: translateY(-2px);
+}
+
+/* buttons */
+button {
+    background: linear-gradient(135deg, #1e6b52, #2a8c66);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(30, 107, 82, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #164c3a, #1e6b52);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(30, 107, 82, 0.4);
+}
+
+/* links */
+a {
+    color: #1e6b52;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #164c3a;
+    text-decoration: underline;
+}
+
+/* social media links */
+.Contact-Us {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f0f7f4;
+    border-radius: 10px;
+}
+
+.Contact-Us a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #1e6b52, #2a8c66);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.Contact-Us a:hover {
+    background: linear-gradient(135deg, #164c3a, #1e6b52);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(30, 107, 82, 0.3);
+    text-decoration: none;
+}
+
+/* contact-page  */
+.contact-Info,
+.Customer-Support,
+.Partnerships,
+.Careers,
+.feedback,
+.newsletter,
+.branches,
+.Testimonials,
+.office-hours,
+.contact-details {
+    background: #f0f7f4;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    border-left: 5px solid #2a8c66;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* testimonials */
+blockquote {
+    background: white;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border-left: 5px solid #1e6b52;
+    font-style: italic;
+    color: #555;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+blockquote footer {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #1e6b52;
+    font-style: normal;
+}
+
+/* images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.service-item img {
+    max-width: 300px;
+    margin-right: 1.5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* footer */
+footer {
+    background: linear-gradient(135deg, #1e6b52, #164c3a);
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.8rem 0;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* responsiveness */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px; /* Better for mobile readability */
+    }
+    
+    nav {
+        padding: 0.8rem;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        margin: 8px auto;
+        width: 200px;
+        padding: 12px;
+    }
+    
+    header {
+        padding: 1.5rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.6rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    section {
+        margin: 0.5rem;
+        padding: 1.5rem;
+    }
+    
+    section h1 {
+        font-size: 1.5rem;
+    }
+    
+    article {
+        padding: 1.5rem;
+    }
+    
+    form {
+        padding: 1.5rem;
+    }
+    
+    ul {
+        margin-left: 1.5rem;
+    }
+    
+    .service-item img {
+        max-width: 100%;
+        margin: 1rem 0;
+        display: block;
+    }
+    
+    footer {
+        padding: 2rem 1rem;
+    }
+}
